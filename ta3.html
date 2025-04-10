@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore More</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar a{
+            position: relative;
+            font-size: 18px;
+            color: #5D5D5D;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 50px;
+
+        }
+        .navbar a::before{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;;
+            background: #933C24;
+            transition: .3s;
+        }
+        .navbar a:hover::before{
+            width:100%;
+        }
+
+
+        .explore-item:hover {
+            background-color: #f8f9fa;
+            padding-left: 10px;
+        }
+        .divider {
+            margin: 1.5rem 0;
+            border-top: 1px solid #dee2e6;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .gallery .col-md-4 {
+            padding: 10px;
+        }
+        .btn{
+            background-color:#933C24;
+            color:#eee;
+
+        }
+        .promo-section {
+            background:url(./Rectangle\ 41.png);
+            padding:120px;
+            border: radius 100px; ;
+            margin: top 100px;;
+        }
+        .h{
+            color:#ffffff;
+        }
+        .p{
+            color: #B9B9B9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+       
+        <h1 class="mb-4 fw-bold text-center ">Explore More</h1>
+
+        
+      <nav class="navbar">
+            <a href="">Cakfe</a> 
+            <a href="">Muffins</a>
+            <a href="">Croissant</a>
+            <a href="">Bread</a>
+            <a href="">Tart</a>
+            <a href="">Favorite</a>
+   
+        </nav>
+
+        <div class="divider"></div>
+
+        <div class="container mt-4">
+            <div class="row gallery">
+                <div class="col-md-6 col-lg-4 mb-3"><img src="./Rectangle 20.png" alt="Muffin"></div>
+                <div class="col-md-6 col-lg-4 mb-3"><img src="./Rectangle 21.png" alt="Cheesecake"></div>
+                <div class="col-md-6 col-lg-4 mb-3"><img src="./Rectangle 22.png" alt="Tart"></div>
+                <div class="col-md-6 col-lg-4 mb-3"><img src="./Rectangle 23.png" alt="Pound Cake"></div>
+                <div class="col-md-6 col-lg-4 mb-3"><img src="./Rectangle 24.png" alt="Brownie"></div>
+                <div class="col-md-6 col-lg-4 mb-3"><img src="./Rectangle 25.png" alt="Cupcake"></div>
+            </div>
+        </div>
+
+
+    <!-- Promo Section -->
+    <div class="promo-section text-center">
+        <div class="row align-items-center  gap-4">
+            <div class="col-md-12">
+                <h2 class="h">About us</h2>
+                <p class="p">Suspendisse ac rhoncus nisi, eu tempor urna<br>Curabitur vel bibendum jorem. Morbi convalis.</p>
+            </div>
+            <div class="col-md-12 text-md-8">
+                <button class="btn btn-outline-success" onclick="window.location.href='./ta4.html'">Read More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

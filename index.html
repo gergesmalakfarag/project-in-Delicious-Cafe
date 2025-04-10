@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Cafe</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url(./Rectangle\ 10@2x.png);
+            background-size: cover;
+            background-position: center;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+        .footer{
+            background: url("./Rectangle\ 75.png");
+        }
+        .btn-custom {
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary-custom {
+            background-color: #e67e22;
+            border-color: #e67e22;
+            /* position: absolute;
+          left: 80px;  
+          top: 500px; */
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #d35400;
+            border-color: #d35400;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-outline-custom {
+            border: 2px solid #fff;
+            color: #fff;
+            /* position: absolute;
+          left: 273px;  
+          top: 500px; */
+        }
+        .imgs{
+          position: absolute;
+          left: 68px;  /* إحداثي X */
+          top: 19px;   /* إحداثي Y */
+        }
+        
+        .btn-outline-custom:hover {
+            background-color: #fff;
+            color: #333;
+        }
+        
+        .navbar {
+            display: block;
+            transition: top 0.3s ease;
+        }
+        .foim1{
+            display: flex;
+            justify-content:space-between 
+        }
+        .foim1 img {
+            align-self: center;
+        }
+
+        .navbar.show {
+           display: block;
+           opacity: 1;
+        }
+        .de{
+            color: #E9BD8C;
+
+        }
+
+        .footer { background-color: #111; padding: 20px 0; }
+        .footer a { text-decoration: none; color: white; }
+        .footer a:hover { color: #d4a373; }
+
+        .display-3{
+            position: absolute;
+          left: 83px;  
+          top: 277px;   
+        }
+        .display-5{
+            position: absolute;
+          left: 80px;  
+          top: 318px;
+        }
+        .copyright {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="brand-logo" src="./Modrino__2_-removebg-preview 1.png" alt="Logo">
+            </a>
+            
+            <button class="navbar-toggler ms-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon ms-center"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-center">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  fw-bold" href="#">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="de display-3 fs-5 fw-bold mb-4">Delicious Cafe</h1>
+                    <h2 class="display-5 fs-1 fw-bold mb-5 ">Sweet Treats<br> Perfect Cats</h2>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="./ta2.html" class="btn btn-primary-custom btn-custom">Shop Now</a>
+                        <a href="#" class="btn btn-outline-custom btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer text-light">
+        <div class="container">
+            <div class="row">
+                <div class="foim1">
+                 <img src="./Modrino__2_-removebg-preview 1.png" alt="Keithston Logo" style=" width: 114px; height: 116px;">
+                    <img src="./Group 504.png" alt="Keithston Logo" style=" width: 300px;height: 32px;">
+                  </div>
+                <hr>
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p><i class="fas fa-phone"></i> (456) 789-12301</p>
+                    <p><i class="fas fa-envelope"></i> info@modrino.co.uk</p>
+                    <p><i class="fas fa-map-marker-alt"></i> South 13th Street, New York, America</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Recent News</h5>
+                    <div class="d-flex mb-2">
+                        <img src="./Rectangle 157.png" class="me-2" alt="news">
+                        <div>
+                            <small>June 14, 2024</small>
+                            <p class="mb-0">Puff pastry bliss.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./Rectangle 158.png" class="me-2" alt="news">
+                        <div>
+                            <small>June 14, 2024</small>
+                            <p class="mb-0">Puff pastry bliss.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright jest">
+                © 2024 Keithston. All rights reserved.
+              </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+      
+        window.addEventListener('scroll', function () {
+          let currentScroll = window.scrollY;
+      
+          if (currentScroll > lastScrollTop) {
+            // نازل لتحت - نخفي الناف بار
+            navbar.style.top = '-100px';
+          } else {
+            // طالع لفوق - نظهر الناف بار
+            navbar.style.top = '0';
+          }
+      
+          lastScrollTop = currentScroll;
+        });
+      </script>
+      
+</body>
+</html>
